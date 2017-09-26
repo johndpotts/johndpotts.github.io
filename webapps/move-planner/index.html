@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Move Planning App</title>
+    <meta property="og:title" content="Move Planning App" />
+    <meta property="og:description" content="An app featuring API calls to Google Street View, Wikipedia, and the New York Times." />
+    <meta property="og:image" content="https://johndpotts.github.io/images/move-planner.png" />
+    <meta property="og:image:width" content="560" />
+    <link rel="shortcut icon" href="images/favicon.png">
+    <meta property="og:image:height" content="420" />
+    <meta property="og:image:alt" content="Portfolio page for John D Potts, Web Developer" />
+    <meta property="og:url" content="https://johndpotts.github.io/webapps/move-planner">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <form id="form-container" class="form-container">
+        <label for="street">Street: </label><input type="text" id="street" value="">
+        <label for="city">City: </label><input type="text" id="city" value="">
+        <button id="submit-btn">Submit</button>
+    </form>
+
+    <hr>
+
+    <h2 id="greeting" class="greeting">Where do you want to live?</h2>
+
+
+    <div class="wikipedia-container">
+        <h3 id="wikipedia-header">Relevant Wikipedia Links</h3>
+        <ul id="wikipedia-links">Type in an address above and find relevant Wikipedia articles here!</ul>
+    </div>
+
+
+    <div class="nytimes-container">
+        <h3 id="nytimes-header">New York Times Articles</h3>
+        <ul id="nytimes-articles" class="article-list">What's going on in your new city? Enter an address and hit submit and the NY Times will tell you here!</ul>
+    </div>
+
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
