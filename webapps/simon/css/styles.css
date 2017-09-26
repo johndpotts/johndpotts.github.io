@@ -1,0 +1,199 @@
+html{
+  background: #FFFAFA;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFAFA, #D3D3D3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFAFA, #D3D3D3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+#gameboard{
+  width:450px;
+  position:relative;
+  margin:auto;
+  top:40px;
+}
+
+#green{
+  cursor:pointer;
+  position: absolute;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border: 182px solid;
+    border-color:#0b7000;
+    border-bottom: none;
+    border-right: none;
+    border-top-left-radius: 182px;
+    left: 32px;
+    top: 32px;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+
+}
+.flashgreen{
+  border-color:lime !important;
+}
+
+#red{
+  cursor:pointer;
+  position: absolute;
+      display: inline-block;
+      width: 0;
+      height: 0;
+      line-height: 0;
+      border: 182px solid;
+      border-color: #660800;
+      border-bottom: none;
+      border-left: none;
+      border-top-right-radius: 182px;
+      left: 235px;
+      top: 32px;
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+.flashred{
+  border-color:#FF0A00 !important;
+}
+#yellow{
+  cursor:pointer;
+  position: absolute;
+     display: inline-block;
+     width: 0;
+     height: 0;
+     line-height: 0;
+     border: 182px solid;
+     border-color:#999900;
+     border-top: none;
+     border-right: none;
+     border-bottom-left-radius: 182px;
+     left: 32px;
+     top: 235px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+.flashyellow{
+  border-color:#FFFF00 !important;
+}
+#blue{
+cursor:pointer;
+  position: absolute;
+      display: inline-block;
+      width: 0;
+      height: 0;
+      line-height: 0;
+      border: 182px solid;
+      border-color:#113377;
+      border-top: none;
+      border-left: none;
+      border-bottom-right-radius: 182px;
+      left: 235px;
+      top: 235px;
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+.flashblue{
+  border-color:#4488FF !important;
+}
+
+
+#top-circle{
+  z-index: 4;
+  background-color: #BBBBBB;
+  width: 150px;
+  height: 150px;
+  position:absolute;
+  display: inline-block;
+  left:150px;
+  top:150px;
+  border-radius:100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+#middle-circle{
+  z-index:3;
+  background-color: #222222;
+  width: 200px;
+  height: 200px;
+  position:absolute;
+  display: inline-block;
+  left:125px;
+  top:125px;
+  border-radius:100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+#start-button{
+ height: 25px;
+ width:25px;
+ border-radius:100%;
+ background-color:green;
+ border-right:2px solid black;
+ border-bottom: 2px solid black;
+ position:relative;
+ top:0px;
+ left:28px;
+ font-size: 20px;
+ font-family: monospace;
+ font-weight: bolder;
+ line-height:60px;
+ text-align: center;
+}
+#start-label{
+  position:relative;
+  top:0px;
+  left:20px;
+  font-size: 15px;
+  font-family: monospace;
+  font-weight: bolder;
+}
+ #title{
+   position:relative;
+   top:30px;
+   left:30px;
+   font-size: 30px;
+   font-family: monospace;
+   font-weight: bolder;
+ }
+ #scoreboard{
+   background-color:#331100;
+   color:#FF0A00;
+   border: 5px solid black;
+   border-radius: 5px;
+   height: 30px;
+   width:40px;
+   font-size: 28px;
+   font-family: monospace;
+   font-weight: bolder;
+   text-align:center;
+   line-height: 30px;
+   position: relative;
+   top: 40px;
+   left: 75px;
+ }
+
+#bottom-circle{
+  position: absolute;
+  z-index:-1;
+      display: inline-block;
+      width: 0;
+      height: 0;
+      line-height: 0;
+cursor:pointer;
+    border: 225px solid #222222;
+      border-radius: 225px;
+      left: 0px;
+      top: 0px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+/*disables highlight boxes from appearing*/
+#red:active,#yellow:active,#green:active,#blue:active{
+  outline-style:none;
+  -webkit-tap-highlight-color:transparent;
+}
+
+#created-by{
+position:relative;
+top:475px;
+  font-family: monospace;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+a{color: black; text-decoration:none;}

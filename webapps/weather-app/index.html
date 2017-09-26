@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>Local Weather App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--meta tags for social sharing-->
+  <meta property="og:title" content="Local Weather App">
+  <meta property="og:description" content="A local weather app that shows current temperature and weather conditions. Created by John D Potts.">
+  <meta property="og:image" content="https://johndpotts.github.io/images/weather_app.png">
+  <meta property="og:url" content="https://johndpotts.github.io/webapps/weather-app/index.html">
+  <meta property="og:image:width" content="560" />
+  <meta property="og:image:height" content="420" />
+  <link rel="shortcut icon" href="favicon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../js/jquery-3.2.1.min.js"><\/script>')</script>
+    <script src="script.js"></script>
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<body onload= getLocation()>
+<header>
+  <h3>Don't feel like looking out the window?</h3>
+  <h1>There's an app for that.</h1>
+</header>
+<br/>
+<div class="container">
+  <i id="icon" class="wi"></i>
+<div class = right>
+    <span id="temperature"></span>
+    <i id= "degree" class="wi wi-fahrenheit"></i>
+  </div>
+  <br/>
+  <div id="weather-condition" class = "right">
+  </div>
+</div>
+  <div id = "button">  <button id="tempswitch" class="switchtemp">Fahrenheit/Celsius</button></div>
+    <footer>
+  <a href="https://johndpotts.github.io/">Created by John D Potts</a>
+</footer>

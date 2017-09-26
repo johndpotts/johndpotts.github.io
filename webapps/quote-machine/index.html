@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>Random Quote Generator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--meta tags for social sharing-->
+  <meta property="og:title" content="Calvin and Hobbes Random Quote Generator">
+  <meta property="og:description" content="A collection of quotes from the comic strip 'Calvin and Hobbes'. Created by John D Potts.">
+  <meta property="og:image" content="https://johndpotts.github.io/images/random_quotes.png">
+  <meta property="og:url" content="https://johndpotts.github.io/webapps/quote-machine/index.html">
+  <meta property="og:image:width" content="560" />
+  <meta property="og:image:height" content="420" />
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../js/jquery-3.2.1.min.js"><\/script>')</script>
+    <script src="js/scripts.js"></script>
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <header>
+
+  </header>
+
+  <div class="content">
+
+    <button id="get-another-quote-button">Get  Another Quote</button>
+    <br/>
+    <br/>
+    <i class="fa fa-quote-left fa-align-right fa-2x  opaque" aria-hidden="true"></i>
+    <span id="quote-content"></span>
+    <br/>
+    <span id="quote-source"></span>
+  </div>
+  <div class="share">
+    <a class="twitter-button" onclick="tquote()" title="Share on Twitter" id="tweet-quote" target="_blank">
+      <i class="fa fa-twitter"></i>
+    </a>
+  </div>
+
+  <script src="https://use.fontawesome.com/8454288ba1.js"></script>
+
+  <footer>
+  <a href="https://johndpotts.github.io/">Created by John D Potts</a>
+  </footer>
+</body>
+
+</html>

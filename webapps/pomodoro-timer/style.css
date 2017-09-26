@@ -1,0 +1,93 @@
+@-ms-viewport{
+  width: device-width;
+}
+
+body {
+  background: #9DEDB9;
+  background: -webkit-linear-gradient(left top, #9DEDB9, #EEEEEE);
+  background: -o-linear-gradient(bottom right, #9DEDB9, #EEEEEE);
+  background: -moz-linear-gradient(bottom right, #9DEDB9, #EEEEEE);
+  background: linear-gradient(to bottom right, #9DEDB9, #EEEEEE);
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  color: white;
+  text-shadow: 1px 1px #333333;
+  text-align: center;
+}
+
+.display {
+  text-align: center;
+  color: #FFFFFF;
+  margin: auto;
+  background-color: #333;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  font-size: 55px;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.top-row {
+  cursor: pointer;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  font-size: 30px;
+}
+
+.timer {
+  position: absolute;
+  top: 110px;
+  right: 100px;
+}
+
+.bottom-row {
+  cursor: pointer;
+  position: absolute;
+  top: 200px;
+  right: 50px;
+  font-size: 30px;
+}
+
+.plus-minus {
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.round-button {
+  color: white;
+  margin-top: 8px;
+  cursor: pointer;
+  height: 65px;
+  width: 65px;
+  font-size: 20px;
+  background-color: #333333;
+  border-radius: 50%;
+  font-weight: bold;
+  text-align: center;
+  border-style: none;
+  font-family: 'Open Sans Condensed', sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bottom-buttons {
+  margin: auto;
+  text-align: center;
+}
+
+a, footer {
+  text-align: center;
+  font-weight: bolder;
+  color: #FFF;
+  font-size: 25px;
+  text-shadow: 2px 2px 25px #000000;
+  margin-top: 40px;
+ text-decoration: none;
+}

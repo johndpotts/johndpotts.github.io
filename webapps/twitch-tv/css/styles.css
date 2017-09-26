@@ -1,0 +1,23 @@
+body{
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: bold;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-image: url("http://res.cloudinary.com/dnyy6kcjj/image/upload/v1500860182/twitch-tv-2_qs6vb1.jpg");
+    background-repeat: repeat-y;
+  background-size: 100% auto;
+}
+.main{
+  padding-top: 15px;
+  padding-bottom: 25px;
+  background-color:#EEE;
+  opacity:.85;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+.thumbnail{
+ max-width: 50px;
+  max-height: 50px;
+  border-radius: 50px;
+}

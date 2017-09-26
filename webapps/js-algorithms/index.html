@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>Javascript Algorithms</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--meta tags for social sharing-->
+  <meta property="og:title" content="Javascript Algorithms">
+  <meta property="og:description" content="Here are some samples of different Javascript Algorithms. Working on fun challenges like this builds up problem solving skills for developers.">
+  <meta property="og:image" content="https://johndpotts.github.io/images/algorithms.png">
+  <meta property="og:url" content="https://johndpotts.github.io/webapps/js-algorithms">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="../../js/jquery-3.2.1.min.js"><\/script>')
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/c77a2223a1.js"></script>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sons-of-obsidian"></script>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <h1>Javascript Algorithms</h1>
+    <br/>
+    <h3>Pig Latin Translator</h3>
+    <pre class="prettyprint linenums:1 lang-js">
+function translatePigLatin() {
+  var str = document.getElementById("pigLatinText").value;
+    str=str.toLowerCase();
+  var arrayOfWords = str.split(" ");
+    for(i=0;arrayOfWords.length>i;i++){
+  var n = arrayOfWords[i].search(/[aeiuo]/);
+      switch (n){
+        case 0: arrayOfWords[i] = arrayOfWords[i]+"way"; break;
+        case -1: arrayOfWords[i] = arrayOfWords[i]+"ay"; break;
+        default :
+      //str= str.substr(n)+str.substr(0,n)+"ay";
+arrayOfWords[i] = arrayOfWords[i].replace(/([^aeiou]*)([aeiou])(\w+)/, "$2$3$1ay");
+      break;
+      }
+    }
+  var pigLatinString = arrayOfWords.join(" ");
+  document.getElementById('pigLatin').innerHTML = "<strong>Your Result: </strong>"+pigLatinString;
+
+            }
+
+  </pre>
+
+
+    <h5>Enter your text in the space below and hit the "Try It" button. This function will translate it into
+         "Pig Latin". Haven't heard of Pig Latin? Check it out
+          on <a target="_newtab" href="https://en.wikipedia.org/wiki/Pig_Latin">Wikipedia</a> </h5>
+    <div class="form-group">
+      <label for="Your Text">Your Text:</label>
+      <textarea class="form-control" rows="5" id="pigLatinText"></textarea>
+      <button type="button" onclick="translatePigLatin()" class="btn btn-primary">Try It!</button>
+        <button type="button" onclick="resetPigLatin()" class="btn btn-warning">Reset</button>
+    </div>
+    <div id="pigLatin"></div>
+
+
+    <br/>
+    <br/>
+    <hr>
+    <br/>
+    <h3>FizzBuzz</h3>
+    <pre class="prettyprint linenums:1">
+function makeFizzBuzz() {
+  var entry = document.getElementById("fizzBuzzText").value;
+  var valid = /\d\,\d/;
+  if (!valid.test(entry)){
+    document.getElementById('fizzbuzz').innerHTML =  "Please enter two numbers, between 1 and 20, separated by a comma."; return;}
+    var splitEntry = entry.split(",");
+
+    var listOfNumbers = "";
+
+    for (i=0;2>i;i++){
+      splitEntry[i] = parseInt(splitEntry[i], 10);
+    }
+    for (i = 1; 101 >i; i++) {
+      output = "";
+      if ((i % splitEntry[0]) === 0 && (i % splitEntry[1]) === 0)
+      output = "FizzBuzz";
+      else if ((i % splitEntry[0]) === 0)
+      output = "Fizz";
+      else if ((i % splitEntry[1]) === 0)
+      output = "Buzz";
+  else
+output = i;
+  listOfNumbers += output + "  ";
+      }
+document.getElementById('fizzbuzz').innerHTML =  "<strong>Your Result: </strong>"+listOfNumbers;
+      }
+
+</pre>
+
+    <h5>Enter two numbers in the box below, separated by a comma, and hit the "Try It" button.
+   The code will return all numbers between 0 and 100. Multiples of
+   the first number will be replaced by "Fizz", and multiples of the
+   second number will be replaced by "Buzz." Can you guess
+  what happens if a number is a multiple of both?</h5>
+    <div class="form-group">
+      <label for="Your Numbers">Your Numbers:</label>
+      <textarea class="form-control" id="fizzBuzzText" rows="1"></textarea>
+      <button type="button" onclick="makeFizzBuzz()" class="btn btn-primary">Try It!</button>
+      <button type="button" onclick="resetFizzBuzz()" class="btn btn-warning">Reset</button>
+    </div>
+    <div id="fizzbuzz">
+    </div>
+
+
+    <br/>
+    <br/>
+    <hr>
+    <br/>
+    <h3>Palindrome</h3>
+    <pre class="prettyprint linenums:1">
+  function testPalindrome(){
+  var str = document.getElementById("palindromeText").value;
+  if(str.toLowerCase() == str.toLowerCase().split("").reverse().join("")){
+    document.getElementById('palindrome').innerHTML = "<strong>Your Result: </strong> Yes, this is a palindrome";
+  }
+  else{document.getElementById('palindrome').innerHTML = "<strong>Your Result: </strong> Nope, not a palindrome!";}
+  }
+
+</pre>
+
+    <h5>Enter a word in the space below and hit the "Try It" button. This function will determine if the word is a "palindrome" (the same forward and backward).</h5>
+    <div class="form-group">
+      <label for="Your Word">Your Word:</label>
+      <textarea class="form-control" rows="1" id="palindromeText"></textarea>
+      <button type="button" onclick="testPalindrome()" class="btn btn-primary">Try It!</button>
+      <button type="button" onclick="resetPalindrome()" class="btn btn-warning">Reset</button>
+    </div>
+    <div id="palindrome"></div>
+
+
+  </div>
+  <!--end container-->
+  <footer>
+    <a href="https://johndpotts.github.io/">Created by John D Potts</a>
+    <br/>
+    <br/>
+    <br/>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

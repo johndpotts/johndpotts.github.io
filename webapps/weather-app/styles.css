@@ -1,0 +1,58 @@
+html {
+  height: 100%
+}
+
+body {
+  height: 200%;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-color: #FFF;
+  background-repeat: no-repeat;
+  text-align: center;
+  text-shadow: 2px 2px 5px black;
+  color: white;
+  font-family: sans-serif;
+}
+
+.container {
+  margin-top: 30px;
+  margin-bottom: 100px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#icon {
+  font-size: 6em;
+  float: left;
+}
+
+.right {
+  float: right;
+  font-size: 25px;
+}
+
+#weather-condition {
+  float: right;
+}
+
+.switchtemp {
+  background-color: Transparent;
+  outline-color: #000;
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  font-size: 20px;
+  margin: auto;
+}
+
+footer {
+  margin-top: 200px;
+}
+
+#button {
+  margin-top: 30px;
+}
+
+a{color: white; text-decoration:none;}
