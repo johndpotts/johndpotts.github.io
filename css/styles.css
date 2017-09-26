@@ -81,10 +81,15 @@ h5 {
   opacity: 0;
   height:125px;
 }
-
+.logo-lg{
+  height:120px;
+  width:120px;
+}
 .logo{
-margin-top:225px;
-  max-width:300px;
+  margin-right:10px;
+  float:left;
+height:32px;
+width:32px;
 }
 h1 {
   font-weight: lighter;
