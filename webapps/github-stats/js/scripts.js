@@ -72,8 +72,8 @@ document.getElementById('chart').innerHTML = "<i class='fa fa-cog fa-spin fa-4x 
         'use strict';
 
 
-        var width = 360;
-        var height = 360;
+        var width = 300;
+        var height = 300;
         var radius = Math.min(width, height) / 2;
         var donutWidth = 75;
         var legendRectSize = 18;                                  // NEW
