@@ -1,4 +1,12 @@
 
+document.getElementById("username")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+        document.getElementById("usernamebutton").click();
+    }
+});
+
 function gitHubStats(){
 //clear out previous entry
 document.getElementById('chart').innerHTML = "<i class='fa fa-cog fa-spin fa-4x fa-fw'></i><span class='sr-only'>Loading...</span><h4>Retrieving stats from Github</h4>"
