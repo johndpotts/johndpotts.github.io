@@ -1,5 +1,5 @@
 <h2>Add Expense</h2>
-<form id="addForm" name="addForm" novalidate">
+<form id="addForm" name="addForm" novalidate>
     <label>Category</label>
     <select ng-model="expense.category" ng-options="category for category in categories">
     </select>
@@ -10,3 +10,9 @@
     <input type="text"  ng-pattern="/^[a-zA-Z 0-9]*$/" ng-model="expense.description"></input>
     <button ng-disabled="addForm.$pristine || addForm.$dirty && addForm.$invalid" ng-click="submit()">Submit</button>
 </form>
+<ul class="menu">
+     <li><a href="#/home">Home</a>
+     </li>
+     <li><a href="#/view-summary">View Summary</a>
+     </li>
+</ul>
