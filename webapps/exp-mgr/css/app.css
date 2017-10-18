@@ -1,10 +1,10 @@
 body {
   font-family:'Lato', sans-serif;
-  font-weight: 100;  
+  font-weight: 100;
   color:#f9f9f9;
   background: #333;
   height: 100%;
-  
+
 }
 .bg-image {
   position: fixed;
@@ -22,10 +22,11 @@ h1 {
   font-weight: 100;
   margin-left: 5%;
 
-} 
+}
 .menu {
   list-style: none;
   margin-bottom: 2em;
+  margin-top: 2em;
   padding: 0 0 0.5em;
   position: absolute;
   bottom: 1em;
@@ -126,7 +127,7 @@ button:disabled {
   left:100%;
 }
 
-.slide-right.ng-enter {  
+.slide-right.ng-enter {
   left:-100%;
 }
 .slide-right.ng-enter-active {
@@ -141,11 +142,9 @@ button:disabled {
   left:-100%;
 }
 
-.slide-left.ng-enter {  
+.slide-left.ng-enter {
   left:100%;
 }
 .slide-left.ng-enter-active {
   left:0%;
 }
-
-
