@@ -1,6 +1,11 @@
 <div id="details">
 <h2>Expense Details</h2>
-<div class="exp-details" ng-repeat="expense in expenses">
+<button ng-click="deleteAll()">Delete All</button>
+<div class="exp-details row" ng-repeat="expense in expenses">
+	<div class="col-sm-1"><button ng-click="delete()">Delete</button>
+</div>
+	<div class="col-sm-1"><button ng-click="edit()">Edit</button>
+</div>
 	<div class="col-sm-1">{{$index+1}} </div>
 	<div class="col-sm-3">{{expense.category}} </div>
 	<div class="col-sm-4"> {{expense.description}}</div>
