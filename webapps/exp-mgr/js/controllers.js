@@ -23,10 +23,12 @@ angular.module('myApp.controllers', [])
 
 $scope.clearExpenses = function(){
   window.localStorage.clear();
+  $scope.$apply();
 };
 
 $scope.deleteItem = function(key){
 localStorage.removeItem(key);
+$scope.$apply();
 };
 categoryList.forEach(function(item) {
         var catTotal = expService.getCategoryTotal(item);
