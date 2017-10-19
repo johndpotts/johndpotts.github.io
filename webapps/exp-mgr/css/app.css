@@ -88,10 +88,9 @@ button:disabled {
   height:2em;
   float: left;
 }
-.exp-details .col-sm-endrow {
-  width:15%;
+.newline {
+  width:70%;
   height:2em;
-
 }
 .exp-details .col-sm-3 {
   width:20%;
