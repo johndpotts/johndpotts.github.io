@@ -81,31 +81,31 @@ button:disabled {
 .exp-details >div {
 
   padding: 0.5em 0.2em;
-  border-bottom: thin solid #eaeaea;
+
 }
 @media (max-width:500px){
 .exp-details .id {
-  width:5%;
+  width:10%;
   height:2em;
   float: left;
 }
 .exp-details .category {
-  width:10%;
+  width:15%;
   height:2em;
     float: left;
 }
 .exp-details .details {
-  width:35%;
+  width:45%;
   height:2em;
     float: left;
 }
 .exp-details .amount {
-  width:10%;
+  width:15%;
   height:2em;
     float: left;
 }
 .exp-details .delete {
-  width:10%;
+  width:90%;
   height:2em;
     float: left;
 }
@@ -117,12 +117,12 @@ button:disabled {
   float: left;
 }
 .exp-details .category {
-  width:15%;
+  width:20%;
   height:2em;
     float: left;
 }
 .exp-details .details {
-  width:35%;
+  width:40%;
   height:2em;
     float: left;
 }
