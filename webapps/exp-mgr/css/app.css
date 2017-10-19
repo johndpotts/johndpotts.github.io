@@ -88,6 +88,7 @@ button:disabled {
 }
 hr{
   clear:both;
+  width:100%
 }
 @media (max-width:500px){
 .exp-details .id {
@@ -115,6 +116,10 @@ hr{
   height:1.5em;
     float: left;
 }
+.newline {
+  width:90%;
+  height:5em;
+}
 }
 @media (min-width:501px){
 .exp-details .id {
@@ -141,6 +146,10 @@ hr{
   width:10%;
   height:1.5em;
     float: left;
+}
+.newline {
+  width:90%;
+  height:2em;
 }
 }
 
