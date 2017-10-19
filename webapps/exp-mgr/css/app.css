@@ -90,12 +90,12 @@ button:disabled {
   float: left;
 }
 .exp-details .category {
-  width:15%;
+  width:10%;
   height:2em;
     float: left;
 }
 .exp-details .details {
-  width:45%;
+  width:35%;
   height:2em;
     float: left;
 }
@@ -105,14 +105,14 @@ button:disabled {
     float: left;
 }
 .exp-details .delete {
-  width:15%;
+  width:10%;
   height:2em;
     float: left;
 }
 }
 @media (min-width:501px){
 .exp-details .id {
-  width:10%;
+  width:5%;
   height:2em;
   float: left;
 }
@@ -139,7 +139,7 @@ button:disabled {
 }
 
 .newline {
-  width:100%;
+  width:90%;
   height:2em;
 }
 
