@@ -84,16 +84,12 @@ button:disabled {
   border-bottom: thin solid #eaeaea;
 }
 .exp-details .col-sm-1 {
-  width:5%;
+  width:10%;
 }
-.exp-details .col-sm-2 {
-  width:20%;
-}
+
 .exp-details .col-sm-3 {
-  width:20%;
-}.exp-details .col-sm-4 {
-  width:35%;
-}
+  width:30%;
+
 
 /*@media all and (min-width: 680px){
   #summary,#details{
