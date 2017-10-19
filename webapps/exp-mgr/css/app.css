@@ -79,22 +79,25 @@ button:disabled {
 }
 
 .exp-details >div {
-  
+
   padding: 0.5em 0.2em;
   border-bottom: thin solid #eaeaea;
 }
 .exp-details .col-sm-1 {
   width:10%;
   height:2em;
+  float: left;
 }
 
 .exp-details .col-sm-3 {
   width:20%;
   height:2em;
+    float: left;
 }
 .exp-details .col-sm-4 {
   width:30%;
   height:2em;
+    float: left;
 }
 
 
