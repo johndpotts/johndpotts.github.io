@@ -79,7 +79,7 @@ button:disabled {
 }
 
 .exp-details >div {
-  float: left;
+  
   padding: 0.5em 0.2em;
   border-bottom: thin solid #eaeaea;
 }
