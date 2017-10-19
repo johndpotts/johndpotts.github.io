@@ -7,7 +7,7 @@
 	<div class="col-sm-3">{{expense.category}} </div>
 	<div class="col-sm-3"> {{expense.description}}</div>
 	<div class="col-sm-1">{{expense.amount| currency:"$"}} </div>
-	<div class="col-sm-1"><button ng-click="delete()">Delete</button>
+	<div class="col-sm-1"><button ng-click="deleteItem(expense.key)">Delete</button>
 </div>
 	<div class="col-sm-1"><button ng-click="edit()">Edit</button>
 </div>

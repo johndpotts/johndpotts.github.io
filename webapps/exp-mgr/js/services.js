@@ -17,7 +17,7 @@ value('version', '0.1')
                     var key = prefix + timeStamp;
                  //   data.date = timeStamp;
                     data = JSON.stringify(data);
-              //saves data as a key/value pair in localstorage with the date/time as key      
+              //saves data as a key/value pair in localstorage with the date/time as key
                     localStorage[key] = data;
                 },
 
@@ -29,6 +29,7 @@ value('version', '0.1')
                             if (key.substring(0, prefixLength) == prefix) {
                                 var item = window.localStorage[key];
                                 item = JSON.parse(item);
+                                item.key=key;
                                 expenses.push(item);
                             }
                         });
