@@ -83,25 +83,65 @@ button:disabled {
   padding: 0.5em 0.2em;
   border-bottom: thin solid #eaeaea;
 }
+@media (max-width:500px){
+.exp-details .col-sm-1 {
+  width:20%;
+  height:2em;
+  float: left;
+}
+.exp-details .col-sm-2 {
+  width:30%;
+  height:2em;
+    float: left;
+}
+.exp-details .col-sm-3 {
+  width:50%;
+  height:2em;
+    float: left;
+}
+.exp-details .col-sm-4 {
+  width:40%;
+  height:2em;
+    float: left;
+}
+.exp-details .col-sm-5 {
+  width:40%;
+  height:2em;
+    float: left;
+}
+}
+@media (min-width:501px){
 .exp-details .col-sm-1 {
   width:10%;
   height:2em;
   float: left;
 }
-.newline {
-  width:70%;
+.exp-details .col-sm-2 {
+  width:15%;
   height:2em;
+    float: left;
 }
 .exp-details .col-sm-3 {
-  width:20%;
+  width:35%;
   height:2em;
     float: left;
 }
 .exp-details .col-sm-4 {
-  width:30%;
+  width:10%;
   height:2em;
     float: left;
 }
+.exp-details .col-sm-5 {
+  width:10%;
+  height:2em;
+    float: left;
+}
+}
+.newline {
+  width:70%;
+  height:2em;
+}
+
 
 
 
@@ -118,9 +158,9 @@ button:disabled {
 }
 
 .page-slide.ng-enter,.page-slide.ng-leave{
-   transition: all 0.9s ease-out;
-   -moz-transition: all 0.9s ease-out;
-   -webkit-transition: all 0.9s ease-out;
+   transition: all 0.1s ease-out;
+   -moz-transition: all 0.1s ease-out;
+   -webkit-transition: all 0.1s ease-out;
 }
 
 .slide-right.ng-leave{
