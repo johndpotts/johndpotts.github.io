@@ -88,7 +88,11 @@ button:disabled {
   height:2em;
   float: left;
 }
+.exp-details .col-sm-endrow {
+  width:15%;
+  height:2em;
 
+}
 .exp-details .col-sm-3 {
   width:20%;
   height:2em;
@@ -101,9 +105,6 @@ button:disabled {
 }
 
 
-.spacer{width:100%;
-  display: block;
-height: 20px;}
 
 
 .page-slide {
