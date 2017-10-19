@@ -55,6 +55,7 @@ button{
   border: thin solid #3E7504;
   padding: 3px 8px;
   font-size: 1.2em;
+  cursor:pointer;
 }
 #addForm .ng-pristine {
     background: none!important;
@@ -84,20 +85,16 @@ button:disabled {
 }
 .exp-details .col-sm-1 {
   width:10%;
+  height:2em;
 }
 
 .exp-details .col-sm-3 {
   width:30%;
-
-
-/*@media all and (min-width: 680px){
-  #summary,#details{
-    float:left;
-    width:49%;
-    padding: 0.25em;
-  }
+  height:2em;
 }
-*/
+
+
+
 
 .page-slide {
   padding: 2%;
