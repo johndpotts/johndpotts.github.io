@@ -2,7 +2,7 @@
 <h2>Expense Details</h2>
 <button ng-click="clearExpenses()">Delete All</button>
 <div class="exp-details" ng-repeat="expense in expenses">
-
+<hr/>
 	<div class="id">{{$index+1}} </div>
 	<div class="category">{{expense.category}} </div>
 	<div class="details"> {{expense.description}}</div>
@@ -19,7 +19,7 @@
 <h2 class = "newline">Expense Summary</h2>
 
 
-<div bar-chart data='summaryData' ></div>
+<div bar-chart data='summaryData' class ="spaced"></div>
 
 
 </div>

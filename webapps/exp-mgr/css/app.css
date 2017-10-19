@@ -77,7 +77,9 @@ button:disabled {
 .exp-details {
   clear: both;
 }
-
+.spaced{
+  margin-top:30px;
+}
 .exp-details >div {
 
   padding: 0.5em 0.2em;
@@ -137,6 +139,7 @@ button:disabled {
     float: left;
 }
 }
+
 
 .newline {
   width:90%;
