@@ -24,14 +24,14 @@ angular.module('myApp.controllers', [])
 $scope.clearExpenses = function(){
   if (confirm('Are you sure you want to delete all your expenses?')){
   window.localStorage.clear();
-  Location.reload();
+  location.reload();
 }
 };
 
 $scope.deleteItem = function(key){
 if (confirm('Are you sure you want to delete this expense?')){
   localStorage.removeItem(key);
-Location.reload();
+location.reload();
 }
 };
 categoryList.forEach(function(item) {
