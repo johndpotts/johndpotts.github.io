@@ -1,18 +1,20 @@
 <div id="details">
 <h2>Expense Details</h2>
 <button ng-click="clearExpenses()">Delete All</button>
+<hr/>
 <div class="exp-details" ng-repeat="expense in expenses">
 <hr/>
 	<div class="id">{{$index+1}} </div>
 	<div class="category">{{expense.category}} </div>
-	<div class="details"> {{expense.description}}</div>
 	<div class="amount">{{expense.amount| currency:"$"}} </div>
+	<div class="details"> {{expense.description}}</div>
 	<div class="delete"><button ng-click="deleteItem(expense.key)">Delete</button>
 
 </div>
 <hr/>
 
 </div>
+<hr/>
 </div>
 
 <div id="summary">
