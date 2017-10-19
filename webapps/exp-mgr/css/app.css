@@ -92,12 +92,12 @@ hr{
 }
 @media (max-width:500px){
 .exp-details .id {
-  width:10%;
+  width:5%;
   height:1.5em;
   float: left;
 }
 .exp-details .category {
-  width:15%;
+  width:20%;
   height:1.5em;
     float: left;
 }
