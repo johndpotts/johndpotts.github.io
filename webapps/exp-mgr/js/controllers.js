@@ -22,8 +22,8 @@ angular.module('myApp.controllers', [])
       $scope.summaryData = [];
 
 $scope.clearExpenses = function(){
-  window.localStorage.clear();
-  $scope.$apply();
+    $scope.$apply( function() {window.localStorage.clear();
+});
 };
 
 $scope.deleteItem = function(key){
