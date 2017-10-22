@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>U R Bank Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--meta tags for social sharing-->
+  <meta property="og:title" content="U R Bank Website">
+  <meta property="og:description" content="The website and online portal for U R Bank, a totally ficticious financial institution.">
+  <meta property="og:image" content="https://www.TheActualURLforURBANKwouldgohere/images/preview.png">
+  <meta property="og:url" content="https://www.TheActualURLforURBANKwouldgohere.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="js/data.json" defer></script>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js" defer></script>
+  <script type="text/javascript" src="js/scripts.js" defer></script>
+
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <!--navigation menu-->
+  <nav class="fixed-nav-bar">
+    <div id="menu" class="menu">
+      <a href="#"><img class="logo" src="images/urbank@2x.png" alt='the UR Bank logo'/></a>
+      <a class="show" href="#menu">Menu</a><a class="hide" href="#hidemenu">Menu</a>
+      <ul class="menu-items navbar_ul">
+        <li><a href="#">contact</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#">company</a></li>
+        <li><a href="#">employee</a></li>
+        <li><a href="#">home</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <section class="main">
+
+        <!--this button only appears when width goes below 540-->
+      <button class='login-button-top' data-popup-open="popup-login">Login</button>
+      <h1> Best Bank Ever!</h1>
+
+      <p>r magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+        porro <a href="#">quisquam</a> est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+        velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+        aliquam <a href="#">quaerat</a> voluptatem.  Ut enim ad minima veniam, </p>
+      <h2>Reasons We're Awesome:</h2>
+      <ul>
+        <li><span>quasi architecto beatae</span></li>
+        <li><span>amet, consectetur, adipi</span></li>
+        <li><span>quia non numquam eius</span></li>
+        <li><span>enim ad minima veniam</span></li>
+        <li><span>quasi artecto numquam</span></li>
+      </ul>
+      <div class="mobile-highlight-box">
+        <h3>Amazing Mobile Info</h3>
+        <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quia dolor sit amet
+        </p>
+
+        <picture>
+          <source media="(max-width: 480px)" srcset="images/iphone.png">
+          <source srcset="images/iphone@2x.png">
+          <img src="images/iphone@2x.png" class="phone-pic" alt="picture of an iphone">
+        </picture>
+
+
+      </div>
+      <h1 class="rates-title">Rates  <span class = "rates-title-bold">Check them out.</span></h1>
+<div class = 'rate-table'>
+      <div id='js-rates'>
+      </div>
+      <div class="fine-print">
+        <p>*Based on a $50,000 deposit.</p>
+      </div>
+    </div>
+
+    </section>
+
+    <aside>
+      <!--this button goes away when width goes above 540-->
+      <button class='login-button' data-popup-open="popup-login">Login</button>
+
+      <div class="tab-container">
+        <ul class="tabs">
+          <li class="tab-link current first-tab" data-tab="tab-1">News</li><li class="tab-link second-tab" data-tab="tab-2">Archive</li>
+
+        </ul>
+        <div id="tab-1" class="tab-content current">
+          <a href="#" class="spaced">Lorem ipsum dolor</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore
+          <a href="#" class="spaced">Lorem ipsum dolor</a> Ut enim ad minim veniam, quis nostrud exercitation incididunt
+          <a href="#" class="spaced">Lorem ipsum dolor</a> ullamco laboris nisi ut aliquip ex ea commodo consequat magna aliqua..
+        </div>
+        <div id="tab-2" class="tab-content">
+          <a href="#">Lorem ipsum dolor</a>
+          <a href="#">Lorem ipsum dolor</a>
+          <a href="#">Lorem ipsum dolor</a>
+          <a href="#">Lorem ipsum dolor</a>
+          <a href="#">Lorem ipsum dolor</a>
+          <a href="#">Lorem ipsum dolor</a>
+          <a href="#">Lorem ipsum dolor</a>
+          <a href="#">Lorem ipsum dolor</a></div>
+
+      </div>
+      <!-- container -->
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-links">
+      <div class="footer-links-left">
+        <a href="#" id="js-copyright">
+
+</a>
+      </div>
+      <div class="footer-links-right">
+        <a href="#">home</a>
+        <a href="#">employee</a>
+        <a href="#">company</a>
+        <a href="#">services</a>
+        <a href="#">contact</a>
+      </div>
+    </div>
+  </footer>
+
+<!--popup for login-->
+  <div class="popup" data-popup="popup-login">
+    <div class="popup-inner">
+      <h2>Sign In To Your Account</h2>
+      <div class=login-cat>
+        <label for="username"><strong>Username</strong></label>
+        <input type="text" id="username" placeholder="" name="uname" required>
+      </div>
+      <div class=login-cat>
+        <label for="password"><strong>Password</strong></label>
+        <input type="password" id="password" placeholder="" name="psw" required>
+      </div>
+      <div class=login-cat>
+        <button class="login-popup" type="submit">Login</button>
+      </div>
+      <a class="popup-close" data-popup-close="popup-login" href="."><img src="images/times.png" alt="close login window"/></a>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
