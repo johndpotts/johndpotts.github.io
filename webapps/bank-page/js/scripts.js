@@ -2,7 +2,10 @@ $(document).ready(function() {
 
 //triggers nav links on smaller screens
   responsive_menu = $('.navbar_ul');
+  var get_width = $(this).width();
   $('#menu').on('click', function(e) {
+
+    e.preventDefault;
     responsive_menu.slideToggle("500");
   });
   $(window).resize(function() {

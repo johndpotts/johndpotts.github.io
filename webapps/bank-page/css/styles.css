@@ -411,7 +411,7 @@ aside {
   background-image: url("../images/down-arrow-icon.png"); }
 
 .hide {
-  background-image: url("../images/up-arrow-icon.png"); }
+  background-image: url("../images/down-arrow-icon.png"); }
 
 @media only screen and (max-width: 1124px) {
   .menu {
