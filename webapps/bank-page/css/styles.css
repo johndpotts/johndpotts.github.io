@@ -581,4 +581,30 @@ aside {
     margin-left: -20px;
     margin-bottom: 10px; }
   .tab-container {
-    width: 100%; } }
+    width: 100%; }
+
+.rates-title {
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  color: #555555;
+  font-weight: 100; }
+  .rates-title :after {
+    content: '';
+    width: 0;
+    height: 200%;
+    position: absolute;
+    border: 1px solid #AAAAAA;
+    top: -10px;
+    left: 80px; }
+
+.rates-title-bold {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  color: #555555;
+  font-weight: bold;
+  margin-left: 15px; }
+
+
+
+}
