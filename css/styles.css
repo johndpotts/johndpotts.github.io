@@ -9,6 +9,10 @@ i{
   color:#222229;
 }
 
+.bold{
+  font-weight:bold;
+}
+
 #background_wrap {
     z-index: -1;
     position: fixed;
