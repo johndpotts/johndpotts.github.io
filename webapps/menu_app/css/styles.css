@@ -1,0 +1,511 @@
+
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+body{font-family: sans-serif;
+background-color:#222222;}
+
+
+
+h2{margin:auto;}
+
+.hidden{
+  display:none;
+}
+
+.navigation{
+  margin: 60px auto 60px auto;
+  width:500px;
+}
+.navigation div{
+  display:inline-block;
+  font-family: "Seaweed Script";
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  margin:0px 15px;
+}
+
+.selected{
+  color:#888888 ;
+  text-decoration:none;
+  cursor:default;
+  display:inline-block;
+  font-family: "Seaweed Script";
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  margin:0px 15px;;
+
+}
+.navigation a:visited{
+color:#888888 ;
+text-decoration:none;
+display:inline-block;
+font-family: "Seaweed Script";
+color: #fff;
+text-align: center;
+font-size: 40px;
+margin:0px 15px;
+}
+
+
+
+
+
+/*popup */
+.popup {
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background:rgba(0,0,0,.8);
+}
+
+/* Inner */
+.popup-inner {
+color:#EEEEEE;
+    width:550px;
+    height:90%;
+    max-height:500px;
+    padding:20px;
+    position:absolute;
+    top:40%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    box-shadow:0px 2px 6px rgba(0,0,0,1);
+    border-radius:3px;
+    border: 2px dashed #EEEEEE;
+    background:#222222;
+}
+
+/* Close Button */
+.popup-close {
+    width:30px;
+    height:30px;
+    padding-top:4px;
+    display:inline-block;
+    position:absolute;
+    top:0px;
+    right:0px;
+    transition:ease 0.25s all;
+    -webkit-transform:translate(50%, -50%);
+    transform:translate(50%, -50%);
+    border-radius:1000px;
+    background:rgba(0,0,0,0.4);
+    font-family:Arial, Sans-Serif;
+    font-size:20px;
+    text-align:center;
+    line-height:100%;
+    color:#EEEEEE;
+}
+
+table {
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  color: #EEEEEE;
+	background:#222222;
+	margin:auto;
+	border:#ccc 1px solid;
+width:80%;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+
+	-moz-box-shadow: 0 1px 2px #d1d1d1;
+	-webkit-box-shadow: 0 1px 2px #d1d1d1;
+	box-shadow: 0 1px 2px #d1d1d1;
+}
+table th {
+	padding:21px 25px 22px 25px;
+	border-top:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+
+	background: #222222;
+
+}
+table th:first-child {
+	text-align: left;
+	padding-left:20px;
+}
+table tr:first-child th:first-child {
+	-moz-border-radius-topleft:3px;
+	-webkit-border-top-left-radius:3px;
+	border-top-left-radius:3px;
+}
+table tr:first-child th:last-child {
+	-moz-border-radius-topright:3px;
+	-webkit-border-top-right-radius:3px;
+	border-top-right-radius:3px;
+}
+table tr {
+	text-align: center;
+	padding-left:20px;
+}
+table td:first-child {
+	text-align: left;
+	padding-left:20px;
+	border-left: 0;
+}
+table td {
+	padding:18px;
+	border-top: 1px solid #eeeeee;
+	border-bottom:1px solid #eeeeee;
+	border-left: 1px solid #eeeeee;
+
+	background: #222222;
+
+}
+table tr.even td {
+	background: #f6f6f6;
+
+}
+table tr:last-child td {
+	border-bottom:0;
+}
+table tr:last-child td:first-child {
+	-moz-border-radius-bottomleft:3px;
+	-webkit-border-bottom-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+table tr:last-child td:last-child {
+	-moz-border-radius-bottomright:3px;
+	-webkit-border-bottom-right-radius:3px;
+	border-bottom-right-radius:3px;
+}
+table tr:hover td {
+	background: #333333;
+
+}
+ button {
+   font-family: Georgia, "Times New Roman", Times, serif;
+   font-size: 16px;
+  margin: .5rem auto;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  display: block;
+  background-color: #EEEEEE;
+  border: 1px dashed #222222;
+  color: #222222;
+  font-weight: 300;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+ button:hover {
+  background-color: #222222;
+  color: #EEEEEE;
+  border-color: #EEEEEE;
+  cursor:pointer;
+}
+
+#add-section{
+  width:70%;
+  margin:auto;
+}
+
+
+.shadow {
+  color: #fff;
+  font-family: Arvo;
+  font-weight: bold;
+  text-shadow:
+    -3px -3px 0 #222,
+    3px -3px 0 #222,
+    -3px 3px 0 #222,
+    3px 3px 0 #222,
+    4px 4px 0 #fff,
+    5px 5px 0 #fff,
+    6px 6px 0 #fff,
+    7px 7px 0 #fff;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  transform: scaleY(0.7);
+  -webkit-transform: scaleY(0.7);
+  -moz-transform: scaleY(0.7);
+  margin:0;
+  text-align: center;
+}
+.script {
+  font-family: "Seaweed Script";
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  margin-top:40px;
+  margin-bottom:20px;
+}
+.script span {
+  background-color: #222222;
+  padding: 0 0.3em;
+}
+.script:before {
+  content:"";
+  display: block;
+  position: absolute;
+  z-index:-1;
+  top: 50%;
+  width: 100%;
+  border-bottom: 3px solid #fff;
+}
+.text1 {
+  font-size: 60px;
+  text-align: center;
+}
+.text2 {
+  font-size: 169px;
+}
+.text3 {
+  font-size: 100px;
+}
+
+.form-style-4{
+    width: 450px;
+    font-size: 16px;
+    background: #222222;
+    padding: 30px 30px 15px 30px;
+    border-width: 2px;
+    border-style: dashed;
+    border-color: #EEEEEE;
+    margin: 40px auto;
+}
+.form-style-4 input[type=submit],
+.form-style-4 input[type=button],
+.form-style-4 input[type=text],
+.form-style-4 input[type=email],
+.form-style-4 textarea,
+.form-style-4 label
+{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    color: #EEEEEE;
+    margin-top:10px;
+
+}
+.form-style-4 label {
+    display:inline-block;
+    margin-bottom: 10px;
+}
+.form-style-4 label > span{
+    display: inline-block;
+    float: left;
+    width: 150px;
+}
+.form-style-4 input[type=text],
+.form-style-4 input[type=email]
+{
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #eeeeee;
+    width: 275px;
+    outline: none;
+    padding: 0px 0px 0px 0px;
+    font-style: italic;
+}
+.form-style-4 textarea{
+    font-style: italic;
+    padding: 0px 0px 0px 0px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px dashed #eeeeee;
+    width: 275px;
+    overflow: hidden;
+    resize:none;
+    height:20px;
+}
+
+.form-style-4 textarea:focus,
+.form-style-4 input[type=text]:focus,
+.form-style-4 input[type=email]:focus,
+.form-style-4 input[type=email] :focus
+{
+    border-bottom: 1px dashed #eeeeee;
+}
+
+.form-style-4 input[type=submit],
+.form-style-4 input[type=button]{
+  font-family: Georgia, "Times New Roman", Times, serif;
+
+  margin: .5rem auto;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  display: block;
+  background-color: #EEEEEE;
+  border: 1px dashed #222222;
+  color: #222222;
+  font-weight: 300;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.form-style-4 input[type=submit]:hover,
+.form-style-4 input[type=button]:hover{
+  background-color: #111111;
+  color: #EEEEEE;
+  border-color: #EEEEEE;
+  cursor:pointer;
+}
+
+.form-style-4 select {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background-color:#222222;
+  border: 1px dashed #eeeeee;
+  padding: 8px;
+  border-radius: 4px;
+  color:#eeeeee;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   cursor:pointer;
+
+}
+
+@media only screen and (max-width: 680px){
+  .text1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .text2 {
+    font-size: 80px;
+    text-align: center;
+  }
+  .text3 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .form-style-4{
+      width: 285px;
+      font-size: 12px;
+      background: #222222;
+      padding: 5px 5px 5px 5px;
+      border-width: 2px;
+      border-style: dashed;
+      border-color: #EEEEEE;
+      margin: 5px auto;
+  }
+  .form-style-4 textarea{width:170px;}
+
+  .script {
+    text-align: center;
+    font-size: 20px;
+    margin-top:20px;
+    margin-bottom:10px;
+  }
+
+  table {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 12px;
+    color: #EEEEEE;
+  	background:#222222;
+  	margin:auto;
+  	border:#ccc 1px solid;
+  max-width:100%;
+  }
+
+  table th {
+  	padding:1px 2px 1px 2px;
+  }
+
+  table th:first-child {
+  	text-align: left;
+  	padding-left:2px;
+  }
+
+  table tr {
+  	text-align: center;
+  	padding-left:2px;
+  }
+  table td:first-child {
+  	text-align: left;
+  	padding-left:2px;
+  	border-left: 0;
+  }
+  table td {
+  	padding:2px;
+    }
+
+    .navigation{
+      margin: 10px auto 10px auto;
+      width:280px;
+    }
+    #add-section{
+      width:100%;
+    }
+    .navigation div{
+      font-size: 20px;
+      margin:0px 10px;
+    }
+
+    .selected{
+      font-size: 20px;
+      margin:0px 10px;;
+
+    }
+    .navigation a:visited{
+    font-size: 20px;
+    margin:0px 1px;
+    }
+
+    button {
+     margin: .2rem auto;
+     font-size: .8rem;
+     padding: .3rem .6rem;
+     display: block;
+     background-color: #EEEEEE;
+     border: 1px dashed #222222;
+     color: #222222;
+     font-weight: 300;
+     -webkit-border-radius: 3px;
+     border-radius: 3px;
+     -webkit-transition: all 0.3s ease-in-out;
+     -moz-transition: all 0.3s ease-in-out;
+     transition: all 0.3s ease-in-out;
+   }
+
+   .popup-inner {
+   color:#EEEEEE;
+       width:300px;
+       height:90%;
+       max-height:500px;
+       padding:20px;
+       position:absolute;
+       top:50%;
+       left:50%;
+       -webkit-transform:translate(-50%, -50%);
+       transform:translate(-50%, -50%);
+       box-shadow:0px 2px 6px rgba(0,0,0,1);
+       border-radius:3px;
+       border: 2px dashed #EEEEEE;
+       background:#222222;
+   }
+   .shadow {
+     color: #fff;
+     font-family: Arvo;
+     font-weight: bold;
+     text-shadow:
+       -3px -3px 0 #222,
+       3px -3px 0 #222,
+       -3px 3px 0 #222,
+       3px 3px 0 #222,
+       .5px .5px 0 #fff,
+       1px 1px 0 #fff,
+       2px 2px 0 #fff,
+       3px 3px 0 #fff;
+     line-height: 0.8em;
+     letter-spacing: 0.1em;
+     transform: scaleY(0.7);
+     -webkit-transform: scaleY(0.7);
+     -moz-transform: scaleY(0.7);
+     margin:0;
+     text-align: center;
+   }
+}

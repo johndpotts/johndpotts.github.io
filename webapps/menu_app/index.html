@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>Menu App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <!--meta tags for social sharing-->
+  <meta property="og:title" content=""><!--TODO-->
+  <meta property="og:description" content=""><!--TODO-->
+  <meta property="og:image" content=""> <!--TODO-->
+  <meta property="og:url" content=""><!--TODO-->
+  <link rel="shortcut icon" href="images/favicon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <header>
+    <h1 class="shadow text3">Menu App</h1>
+  </header>
+
+  <!---navgation tabs--->
+  <div class = 'navigation'>
+        <div>
+          <a href='#' ><span id="view-all-items" class = 'selected'>View all Items</span></a>
+        </div>
+        <div>
+          <a href = '#'  ><span id='add-an-item'>Add an Item</span></a>
+        </div>
+  </div>
+
+  <!---view items section--->
+<div id = 'view-section'>
+    <h2 class="shadow text1" >Our Menu</h2>
+    <p class="script"><span>Appetizers</span></p>
+    <table>
+      <thead>
+        <tr class="table-title-row">
+          <th>Item</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Healthy Choice?</th>
+          <th>Edit / Delete</th>
+        </tr>
+      </thead>
+      <tbody id="appetizers">
+      </tbody>
+    </table>
+
+    <p class="script"><span>Entrees</span></p>
+  <table>
+    <thead>
+      <tr class="table-title-row">
+        <th>Item</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Healthy Choice?</th>
+        <th>Edit / Delete</th>
+      </tr>
+    </thead>
+    <tbody id="entrees">
+    </tbody>
+  </table>
+
+    <p class="script"><span>Desserts</span></p>
+<table>
+  <thead>
+    <tr class="table-title-row">
+      <th>Item</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Healthy Choice?</th>
+      <th>Edit / Delete</th>
+    </tr>
+  </thead>
+  <tbody id="desserts">
+  </tbody>
+</table>
+
+  <p class="script"><span>Beverages</span></p>
+<table>
+<thead>
+  <tr class="table-title-row">
+    <th>Item</th>
+    <th>Description</th>
+    <th>Price</th>
+    <th>Healthy Choice?</th>
+    <th>Edit / Delete</th>
+  </tr>
+</thead>
+<tbody id="drinks">
+</tbody>
+</table>
+
+
+</div>
+
+  <!---add items section--->
+<div id = "add-section" class = 'hidden'>
+  <h2 class="shadow text1" >Menu Item</h2>
+  <form id = "add-item-form" class="form-style-4">
+    <label for="Category">Category:</label>
+    <select  id = "category" required>
+  <option value="appetizers">Appetizer</option>
+  <option value="entrees">Entree</option>
+  <option value="dessert">Dessert</option>
+  <option value="drinks">Beverage</option>
+</select>
+<br/>
+    <label for="item">Item:</label>
+<input type="text" name="item" id="item" required><br>
+<label for="description">Description:</label>
+<input type="text" name="description" id="description" required><br>
+<label for="price">Price:</label>
+<input type="text" name="price" id="price" required><br>
+<label for="healthy">Is this a healthy option?</label>
+<select  id = "healthy" required>
+<option value="yes">Yes</option>
+<option value="no">No</option>
+</select>
+<br><br>
+<input type="button" value="Add Item" onclick="saveItem()">
+
+  </form>
+</div>
+
+
+<!---edit item popup--->
+<div class="popup hidden" id = 'js-popup-outer' >
+  <div class="popup-inner" id = 'js-popup-inner'>
+  </div>
+</div>
+
+
+<footer>
+</footer>
+<script src="js/scripts.js"></script>
+</body>
+
+</html>
