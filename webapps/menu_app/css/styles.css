@@ -26,7 +26,7 @@ h2{margin:auto;}
 }
 
 .selected{
-  color:#888888 ;
+  color:#FFF ;
   text-decoration:none;
   cursor:default;
   display:inline-block;
@@ -37,12 +37,14 @@ h2{margin:auto;}
   margin:0px 15px;;
 
 }
+.navigation a{
+color:#FFF ;
+}
 .navigation a:visited{
-color:#888888 ;
+color:#FFF ;
 text-decoration:none;
 display:inline-block;
 font-family: "Seaweed Script";
-color: #fff;
 text-align: center;
 font-size: 40px;
 margin:0px 15px;
@@ -507,5 +509,8 @@ table tr:hover td {
      -moz-transform: scaleY(0.7);
      margin:0;
      text-align: center;
+   }
+   .navigation a{
+   color:#FFF ;
    }
 }
