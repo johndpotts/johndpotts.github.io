@@ -94,7 +94,8 @@ $(document).ready(function() {
     e.preventDefault();
   });
 
-
+//opens comp popup on page load
+$( "#hidden" ).trigger( "click" );
 
 //flips through tabs on news/archives section
   $('ul.tabs li').click(function() {
