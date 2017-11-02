@@ -10,6 +10,10 @@
 .hidden{
   display:none;
 }
+
+#hidden{
+  display:none;
+}
 .fine-print {
   font-family: "Raleway", sans-serif;
   color: #555555;
