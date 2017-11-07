@@ -105,25 +105,25 @@
 <div id = "add-section" class = 'hidden'>
   <h2 class="shadow text1" >Menu Item</h2>
   <form id = "add-item-form" class="form-style-4">
-    <label for="Category">Category:</label>
+    <label for="Category">Category:
     <select  id = "category" required>
   <option value="appetizers">Appetizer</option>
   <option value="entrees">Entree</option>
   <option value="dessert">Dessert</option>
   <option value="drinks">Beverage</option>
-</select>
+</select></label>
 <br/>
-    <label for="item">Item:</label>
-<input type="text" name="item" id="item" required><br>
-<label for="description">Description:</label>
-<input type="text" name="description" id="description" required><br>
-<label for="price">Price:</label>
-<input type="text" name="price" id="price" required><br>
-<label for="healthy">Is this a healthy option?</label>
+    <label for="item">Item:
+<input type="text" name="item" id="item" placeholder="    Item Name" required></label><br>
+<label for="description">Description:
+<input type="text" name="description" id="description" placeholder="Item Description" required></label><br>
+<label for="price">Price:
+<input type="text" name="price" id="price" placeholder="     Item Price" required></label><br>
+<label for="healthy">Is this a healthy option?
 <select  id = "healthy" required>
 <option value="yes">Yes</option>
 <option value="no">No</option>
-</select>
+</select></label>
 <br><br>
 <input type="button" value="Add Item" onclick="saveItem()">
 
