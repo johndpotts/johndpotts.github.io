@@ -20,7 +20,7 @@ $(document).ready(function() {
     difficultyLevel = null;
 
     var UA = navigator.userAgent,
-    iOS = !!(UA.match(/iPad|iPhone/i));
+    var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
     if (iOS) {
        $(document).on('touchstart', function (e) {
