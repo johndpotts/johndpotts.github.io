@@ -18,7 +18,7 @@ i{
     position: fixed;
     top: 0;
     left: 0;
-  
+
     background-attachment: fixed;
     min-width: 100%;
       min-height: 100%;
@@ -54,6 +54,7 @@ h5 {
 @media screen and (max-width: 500px) {
     #background_wrap {
         background-image: url('../images/lighttrees.jpeg');
+        background-position: 40%;
     }
     .home{
       font-size:45px;
