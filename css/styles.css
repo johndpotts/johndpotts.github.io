@@ -18,13 +18,10 @@ i{
     position: fixed;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
+  
     background-attachment: fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
+    min-width: 100%;
+      min-height: 100%;
 
 }
 .nav.navbar-nav li a {
