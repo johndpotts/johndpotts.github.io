@@ -29,19 +29,23 @@ footer {
 
 .choose-team, .choose-opponent {
   font-size: 30px;
+  cursor: pointer;
 }
 
 .done, .game-over, .towel, .another-round {
   font-size: 25px;
+  cursor: pointer;
 }
 
 .x, .o {
   margin: 20px;
   font-size: 50px;
+  cursor: pointer;
 }
 
 .cpu, .human, .towel, .another-round {
   margin: 20px;
+  cursor: pointer;
 }
 
 .x:hover, .o:hover, .cpu:hover, .human:hover, .pro:hover, .towel:hover, .another-round:hover {
@@ -69,6 +73,7 @@ footer {
   line-height: 90px;
   height: 100px;
   width: 100px;
+  cursor: pointer;
 }
 
 #tile-2 {
@@ -78,6 +83,7 @@ footer {
   width: 100px;
   height: 100px;
   line-height: 90px;
+  cursor: pointer;
 }
 
 #tile-3 {
@@ -87,6 +93,7 @@ footer {
   width: 100px;
   height: 100px;
   line-height: 90px;
+  cursor: pointer;
 }
 
 #tile-4 {
@@ -96,6 +103,7 @@ footer {
   width: 100px;
   height: 100px;
   line-height: 90px;
+  cursor: pointer;
 }
 
 #tile-5 {
@@ -105,6 +113,7 @@ footer {
   width: 100px;
   height: 100px;
   line-height: 90px;
+  cursor: pointer;
 }
 
 #tile-6 {
@@ -114,6 +123,7 @@ footer {
   line-height: 90px;
   width: 100px;
   height: 100px;
+  cursor: pointer;
 }
 
 #tile-7 {
@@ -123,6 +133,7 @@ footer {
   width: 100px;
   height: 100px;
   line-height: 90px;
+  cursor: pointer;
 }
 
 #tile-8 {
@@ -132,6 +143,7 @@ footer {
   width: 100px;
   height: 100px;
   line-height: 90px;
+  cursor: pointer;
 }
 
 #tile-9 {
@@ -141,6 +153,7 @@ footer {
   width: 100px;
   height: 100px;
   line-height: 90px;
+  cursor: pointer;
 }
 
 a{color: #EEEEEE; text-decoration:none;}
