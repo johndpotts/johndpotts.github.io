@@ -19,6 +19,15 @@ $(document).ready(function() {
     playerTurn = null,
     difficultyLevel = null;
 
+    var UA = navigator.userAgent,
+    iOS = !!(UA.match(/iPad|iPhone/i));
+
+    if (iOS) {
+       $(document).on('touchstart', function (e) {
+           e.target.click();
+       });
+    }
+
 
   $('body').on('click', '.towel', function() {
     window.navigator.vibrate(10);
