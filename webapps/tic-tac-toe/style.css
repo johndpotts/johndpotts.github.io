@@ -47,7 +47,7 @@ footer {
   margin: 20px;
   cursor: pointer;
 }
-
+/*
 .x:hover, .o:hover, .cpu:hover, .human:hover, .pro:hover, .towel:hover, .another-round:hover {
   cursor: pointer;
   color: yellow;
@@ -64,7 +64,7 @@ footer {
   cursor: pointer;
   color: red;
   margin: 20px;
-}
+} */
 
 #tile-1 {
   position: absolute;
