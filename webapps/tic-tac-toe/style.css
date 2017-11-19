@@ -29,7 +29,7 @@ footer {
 
 .choose-team, .choose-opponent {
   font-size: 30px;
-  cursor: pointer;
+  
 }
 
 .done, .game-over, .towel, .another-round {
