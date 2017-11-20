@@ -54,14 +54,14 @@ $(document).ready(function() {
     $('#board').addClass('chalk-lines');
   });
 
-  $('.x').on('click touchend', function() {
+  $('.x').on('touchstart', function() {
     window.navigator.vibrate(10);
     playerTurn = "X";
     player1 = "X";
     $("#board").empty();
     $("#board").append('<div class ="choose-opponent"><br />Choose your <br />opponent <br /><br/></br/><a href="#" class="cpu">CPU</a><a href="#" class ="human">Human</a></div>');
   });
-  $('.o').on('click touchend', function() {
+  $('.o').on('touchstart', function() {
     playerTurn = "O";
     player1 = "O";
     window.navigator.vibrate(10);
