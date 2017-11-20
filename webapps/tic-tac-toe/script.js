@@ -19,8 +19,25 @@ $(document).ready(function() {
     playerTurn = null,
     difficultyLevel = null;
 
-    var UA = navigator.userAgent,
-    var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    function iOS() {
+
+    var iDevices = [
+      'iPad Simulator',
+      'iPhone Simulator',
+      'iPod Simulator',
+      'iPad',
+      'iPhone',
+      'iPod'
+    ];
+
+    if (!!navigator.platform) {
+      while (iDevices.length) {
+        if (navigator.platform === iDevices.pop()){ return true; }
+      }
+    }
+
+    return false;
+  }
 
     if (iOS) {
        $(document).on('touchstart', function (e) {
