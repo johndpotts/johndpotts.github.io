@@ -19,59 +19,34 @@ $(document).ready(function() {
     playerTurn = null,
     difficultyLevel = null;
 
-    function iOS() {
-
-    var iDevices = [
-      'iPad Simulator',
-      'iPhone Simulator',
-      'iPod Simulator',
-      'iPad',
-      'iPhone',
-      'iPod'
-    ];
-
-    if (!!navigator.platform) {
-      while (iDevices.length) {
-        if (navigator.platform === iDevices.pop()){ return true; }
-      }
-    }
-
-    return false;
-  }
-
-    if (iOS) {
-       $(document).on('touchstart', function (e) {
-           e.target.click();
-       });
-    }
 
 
-  $('body').on('click', '.towel', function() {
+  $('body').on('click touchstart', '.towel', function() {
     window.navigator.vibrate(10);
     $("#board").empty();
     $("#board").append('<div class="done"><br /> Well, we had a <br />good run</div>');
   });
 
-  $('body').on('click', '.another-round', function() {
+  $('body').on('click ', '.another-round', function() {
     window.navigator.vibrate(10);
     location.reload();
   });
 
-  $('body').on('click', '.beginner', function() {
+  $('body').on('click touchstart', '.beginner', function() {
     window.navigator.vibrate(10);
     difficultyLevel = "beginner";
     $("#board").empty();
     $("#board").append('<div class="game-tile" id="tile-1"></div><div class="game-tile" id="tile-2"></div><div class="game-tile" id="tile-3"></div><div class="game-tile" id="tile-4"></div><div class="game-tile" id="tile-5"></div><div class="game-tile" id="tile-6"></div><div class="game-tile" id="tile-7"></div><div class="game-tile" id="tile-8"></div><div class="game-tile" id="tile-9"></div>');
     $('#board').addClass('chalk-lines');
   });
-  $('body').on('click', '.pro', function() {
+  $('body').on('click touchstart', '.pro', function() {
     window.navigator.vibrate(10);
     difficultyLevel = "pro";
     $("#board").empty();
     $("#board").append('<div class="game-tile" id="tile-1"></div><div class="game-tile" id="tile-2"></div><div class="game-tile" id="tile-3"></div><div class="game-tile" id="tile-4"></div><div class="game-tile" id="tile-5"></div><div class="game-tile" id="tile-6"></div><div class="game-tile" id="tile-7"></div><div class="game-tile" id="tile-8"></div><div class="game-tile" id="tile-9"></div>');
     $('#board').addClass('chalk-lines');
   });
-  $('body').on('click', '.pointless', function() {
+  $('body').on('click touchstart', '.pointless', function() {
     window.navigator.vibrate(10);
     difficultyLevel = "pointless";
     $("#board").empty();
@@ -79,58 +54,58 @@ $(document).ready(function() {
     $('#board').addClass('chalk-lines');
   });
 
-  $('body').on('click', '.x', function() {
+  $('body').on('click touchstart', '.x', function() {
     window.navigator.vibrate(10);
     playerTurn = "X";
     player1 = "X";
     $("#board").empty();
     $("#board").append('<div class ="choose-opponent"><br />Choose your <br />opponent <br /><br/></br/><span class="cpu">CPU</span><span class ="human">Human</span></div>');
   });
-  $('body').on('click', '.o', function() {
+  $('body').on('click touchstart', '.o', function() {
     playerTurn = "O";
     player1 = "O";
     window.navigator.vibrate(10);
     $("#board").empty();
     $("#board").append('<div class ="choose-opponent"><br />Choose your <br />opponent <br /><br/></br/><span class="cpu">CPU</span><span class ="human">Human</span></div>');
   });
-  $('body').on('click', '.cpu', function() {
+  $('body').on('click touchstart', '.cpu', function() {
     player2 = "CPU";
     window.navigator.vibrate(10);
     $("#board").empty();
     $("#board").append('<div class="choose-team"><br /> Choose your <br />difficulty <br /><br/><span class="beginner">Beginner</span><br/><span class="pro">Pro</span><br/><span class="pointless">Pointless</span></div></div>');
   });
-  $('body').on('click', '.human', function() {
+  $('body').on('click touchstart', '.human', function() {
     window.navigator.vibrate(10);
     $("#board").empty();
     $("#board").append('<div class="game-tile" id="tile-1"></div><div class="game-tile" id="tile-2"></div><div class="game-tile" id="tile-3"></div><div class="game-tile" id="tile-4"></div><div class="game-tile" id="tile-5"></div><div class="game-tile" id="tile-6"></div><div class="game-tile" id="tile-7"></div><div class="game-tile" id="tile-8"></div><div class="game-tile" id="tile-9"></div>');
     $('#board').addClass('chalk-lines');
   });
 
-  $('body').on('click', '#tile-1', function() {
+  $('body').on('click touchstart', '#tile-1', function() {
     tileClickFunction(1);
   });
-  $('body').on('click', '#tile-2', function() {
+  $('body').on('click touchstart', '#tile-2', function() {
     tileClickFunction(2);
   });
-  $('body').on('click', '#tile-3', function() {
+  $('body').on('click touchstart', '#tile-3', function() {
     tileClickFunction(3);
   });
-  $('body').on('click', '#tile-4', function() {
+  $('body').on('click touchstart', '#tile-4', function() {
     tileClickFunction(4);
   });
-  $('body').on('click', '#tile-5', function() {
+  $('body').on('click touchstart', '#tile-5', function() {
     tileClickFunction(5);
   });
-  $('body').on('click', '#tile-6', function() {
+  $('body').on('click touchstart', '#tile-6', function() {
     tileClickFunction(6);
   });
-  $('body').on('click', '#tile-7', function() {
+  $('body').on('click touchstart', '#tile-7', function() {
     tileClickFunction(7);
   });
-  $('body').on('click', '#tile-8', function() {
+  $('body').on('click touchstart', '#tile-8', function() {
     tileClickFunction(8);
   });
-  $('body').on('click', '#tile-9', function() {
+  $('body').on('click touchstart', '#tile-9', function() {
     tileClickFunction(9);
   });
 
@@ -242,7 +217,7 @@ if (!gameOver){
         for (i = 1; i < 10; i++) {
           if (tilesClicked.indexOf(i) == -1) {
 
-            $('body').find('#tile-' + i).trigger('click');
+            $('body').find('#tile-' + i).trigger('click touchstart');
             return;
           }
         }
@@ -252,7 +227,7 @@ if (!gameOver){
           if (cpuTiles.indexOf(winningCombinations[i][0]) != -1 &&
             cpuTiles.indexOf(winningCombinations[i][1]) != -1 &&
             tilesClicked.indexOf(winningCombinations[i][2]) == -1) {
-            $('body').find('#tile-' + winningCombinations[i][2]).trigger('click');
+            $('body').find('#tile-' + winningCombinations[i][2]).trigger('click touchstart');
             return;
           }
         }
@@ -260,7 +235,7 @@ if (!gameOver){
           if (cpuTiles.indexOf(winningCombinations[i][0]) != -1 &&
             cpuTiles.indexOf(winningCombinations[i][2]) != -1 &&
             tilesClicked.indexOf(winningCombinations[i][1]) == -1) {
-            $('body').find('#tile-' + winningCombinations[i][1]).trigger('click');
+            $('body').find('#tile-' + winningCombinations[i][1]).trigger('click touchstart');
             return;
           }
         }
@@ -268,7 +243,7 @@ if (!gameOver){
           if (cpuTiles.indexOf(winningCombinations[i][1]) != -1 &&
             cpuTiles.indexOf(winningCombinations[i][2]) != -1 &&
             tilesClicked.indexOf(winningCombinations[i][0]) == -1) {
-            $('body').find('#tile-' + winningCombinations[i][0]).trigger('click');
+            $('body').find('#tile-' + winningCombinations[i][0]).trigger('click touchstart');
             return;
           }
         }
@@ -276,7 +251,7 @@ if (!gameOver){
           if (playerTiles.indexOf(winningCombinations[i][0]) != -1 &&
             playerTiles.indexOf(winningCombinations[i][1]) != -1 &&
             tilesClicked.indexOf(winningCombinations[i][2]) == -1) {
-            $('body').find('#tile-' + winningCombinations[i][2]).trigger('click');
+            $('body').find('#tile-' + winningCombinations[i][2]).trigger('click touchstart');
             return;
           }
         }
@@ -284,7 +259,7 @@ if (!gameOver){
           if (playerTiles.indexOf(winningCombinations[i][0]) != -1 &&
             playerTiles.indexOf(winningCombinations[i][2]) != -1 &&
             tilesClicked.indexOf(winningCombinations[i][1]) == -1) {
-            $('body').find('#tile-' + winningCombinations[i][1]).trigger('click');
+            $('body').find('#tile-' + winningCombinations[i][1]).trigger('click touchstart');
             return;
           }
         }
@@ -292,14 +267,14 @@ if (!gameOver){
           if (playerTiles.indexOf(winningCombinations[i][1]) != -1 &&
             playerTiles.indexOf(winningCombinations[i][2]) != -1 &&
             tilesClicked.indexOf(winningCombinations[i][0]) == -1) {
-            $('body').find('#tile-' + winningCombinations[i][0]).trigger('click');
+            $('body').find('#tile-' + winningCombinations[i][0]).trigger('click touchstart');
             return;
           }
         }
         for (i = 1; i < 10; i++) {
           if (tilesClicked.indexOf(i) == -1) {
 
-            $('body').find('#tile-' + i).trigger('click');
+            $('body').find('#tile-' + i).trigger('click touchstart');
             return;
           }
         }
@@ -311,7 +286,7 @@ if (!gameOver){
       if (cpuTiles.indexOf(winningCombinations[i][0]) != -1 &&
         cpuTiles.indexOf(winningCombinations[i][1]) != -1 &&
         tilesClicked.indexOf(winningCombinations[i][2]) == -1) {
-        $('body').find('#tile-' + winningCombinations[i][2]).trigger('click');
+        $('body').find('#tile-' + winningCombinations[i][2]).trigger('click touchstart');
         return;
       }
     }
@@ -319,7 +294,7 @@ if (!gameOver){
       if (cpuTiles.indexOf(winningCombinations[i][0]) != -1 &&
         cpuTiles.indexOf(winningCombinations[i][2]) != -1 &&
         tilesClicked.indexOf(winningCombinations[i][1]) == -1) {
-        $('body').find('#tile-' + winningCombinations[i][1]).trigger('click');
+        $('body').find('#tile-' + winningCombinations[i][1]).trigger('click touchstart');
         return;
       }
     }
@@ -327,7 +302,7 @@ if (!gameOver){
       if (cpuTiles.indexOf(winningCombinations[i][1]) != -1 &&
         cpuTiles.indexOf(winningCombinations[i][2]) != -1 &&
         tilesClicked.indexOf(winningCombinations[i][0]) == -1) {
-        $('body').find('#tile-' + winningCombinations[i][0]).trigger('click');
+        $('body').find('#tile-' + winningCombinations[i][0]).trigger('click touchstart');
         return;
       }
     }
@@ -335,7 +310,7 @@ if (!gameOver){
       if (playerTiles.indexOf(winningCombinations[i][0]) != -1 &&
         playerTiles.indexOf(winningCombinations[i][1]) != -1 &&
         tilesClicked.indexOf(winningCombinations[i][2]) == -1) {
-        $('body').find('#tile-' + winningCombinations[i][2]).trigger('click');
+        $('body').find('#tile-' + winningCombinations[i][2]).trigger('click touchstart');
         return;
       }
     }
@@ -343,7 +318,7 @@ if (!gameOver){
       if (playerTiles.indexOf(winningCombinations[i][0]) != -1 &&
         playerTiles.indexOf(winningCombinations[i][2]) != -1 &&
         tilesClicked.indexOf(winningCombinations[i][1]) == -1) {
-        $('body').find('#tile-' + winningCombinations[i][1]).trigger('click');
+        $('body').find('#tile-' + winningCombinations[i][1]).trigger('click touchstart');
         return;
       }
     }
@@ -351,45 +326,45 @@ if (!gameOver){
       if (playerTiles.indexOf(winningCombinations[i][1]) != -1 &&
         playerTiles.indexOf(winningCombinations[i][2]) != -1 &&
         tilesClicked.indexOf(winningCombinations[i][0]) == -1) {
-        $('body').find('#tile-' + winningCombinations[i][0]).trigger('click');
+        $('body').find('#tile-' + winningCombinations[i][0]).trigger('click touchstart');
         return;
       }
     }
     if (playerTiles.length == 1 && [1, 2, 3, 4, 6, 7, 8, 9].indexOf(playerTiles[0]) > -1) {
-      $('body').find('#tile-5').trigger('click');
+      $('body').find('#tile-5').trigger('click touchstart');
       return;
     }
     if (playerTiles.length == 2 && [1, 9].indexOf(playerTiles[0]) > -1 && [1, 9].indexOf(playerTiles[1]) > -1) {
-      $('body').find('#tile-4').trigger('click');
+      $('body').find('#tile-4').trigger('click touchstart');
       return;
     }
     if (playerTiles.length == 2 && [3, 8].indexOf(playerTiles[0]) > -1 && [3, 8].indexOf(playerTiles[1]) > -1) {
-      $('body').find('#tile-9').trigger('click');
+      $('body').find('#tile-9').trigger('click touchstart');
       return;
     }
     if (playerTiles.length == 2 && [4, 9].indexOf(playerTiles[0]) > -1 && [4, 9].indexOf(playerTiles[1]) > -1) {
-      $('body').find('#tile-7').trigger('click');
+      $('body').find('#tile-7').trigger('click touchstart');
       return;
     }
     if (playerTiles.length == 2 && [1, 6].indexOf(playerTiles[0]) > -1 && [1, 6].indexOf(playerTiles[1]) > -1) {
-      $('body').find('#tile-3').trigger('click');
+      $('body').find('#tile-3').trigger('click touchstart');
       return;
     }
     if (playerTiles.length == 2 && [1, 8].indexOf(playerTiles[0]) > -1 && [1, 8].indexOf(playerTiles[1]) > -1) {
-      $('body').find('#tile-7').trigger('click');
+      $('body').find('#tile-7').trigger('click touchstart');
       return;
     }
     if (playerTiles.length == 2 && [6, 7].indexOf(playerTiles[0]) > -1 && [6, 7].indexOf(playerTiles[1]) > -1) {
-      $('body').find('#tile-9').trigger('click');
+      $('body').find('#tile-9').trigger('click touchstart');
       return;
     }
     if (playerTiles.length == 2 && [2, 9].indexOf(playerTiles[0]) > -1 && [2, 9].indexOf(playerTiles[1]) > -1) {
-      $('body').find('#tile-3').trigger('click');
+      $('body').find('#tile-3').trigger('click touchstart');
       return;
     }
 
     if (playerTiles.length == 2 && [3, 7].indexOf(playerTiles[0]) > -1 && [3, 7].indexOf(playerTiles[1]) > -1) {
-      $('body').find('#tile-2').trigger('click');
+      $('body').find('#tile-2').trigger('click touchstart');
       return;
     }
 
@@ -397,7 +372,7 @@ if (!gameOver){
     for (i = 1; i < 10; i++) {
       if (tilesClicked.indexOf(i) == -1) {
 
-        $('body').find('#tile-' + i).trigger('click');
+        $('body').find('#tile-' + i).trigger('click touchstart');
         return;
       }
     }
