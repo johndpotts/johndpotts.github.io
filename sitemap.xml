@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://www.johndpotts.com/2019-04-28-functions-mixins-and-maps-in-scss/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2019-04-10-passing-by-value-vs-reference/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2019-03-12-interview-tips-for-developers/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2019-01-18-mocking-inputs-angular-unit-tests/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2018-12-03-sleep-vs-until-protractor/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2018-10-23-meta-tags-for-social-sharing-gatsby-blog/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2018-10-01-why-you-should-practice-algorithms/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2018-09-16-getting-better-technical-requirements/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2018-09-13-data-and-event-binding-in-angular/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2018-09-10-subjects-vs-observables-multicasting/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2018-09-06-great-retrospectives/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2018-09-03-design-patterns-4-singleton/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2018-08-28-fitness/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2018-08-24-automate-boring-stuff/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2018-08-23-rxjs6-changes/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2018-08-19-guaranteed-wins/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2018-08-15-design-patterns-3-mvc/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2018-08-11-how-to-learn/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2018-08-04-design-patterns-2-observer/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2018-07-28-clean-code/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2018-07-21-agile/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2018-07-14-good-emails/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2018-07-07-cron-jobs/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2018-06-30-debugging-4/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2018-06-23-debugging-3/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2018-06-16-debugging-2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2018-06-09-debugging-1/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2018-06-02-design-patterns-1/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2018-05-26-self-teaching/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/2018-05-19-developer-strengths/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.johndpotts.com/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+</urlset>

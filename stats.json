@@ -1,0 +1,184 @@
+{
+  "assetsByChunkName": {
+    "path---2018-09-16-getting-better-technical-requirements": [
+      "path---2018-09-16-getting-better-technical-requirements-4f5b86fd8503ebed77bd.js",
+      "path---2018-09-16-getting-better-technical-requirements-4f5b86fd8503ebed77bd.js.map"
+    ],
+    "path---2018-09-03-design-patterns-4-singleton": [
+      "path---2018-09-03-design-patterns-4-singleton-b7a8be4cec2199bdefd8.js",
+      "path---2018-09-03-design-patterns-4-singleton-b7a8be4cec2199bdefd8.js.map"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-c6ebc60ff5e7beee63da.js",
+      "component---src-pages-index-js-c6ebc60ff5e7beee63da.js.map"
+    ],
+    "path---2018-06-02-design-patterns-1": [
+      "path---2018-06-02-design-patterns-1-d54a22fb157ba86fe95e.js",
+      "path---2018-06-02-design-patterns-1-d54a22fb157ba86fe95e.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "path---2018-09-13-data-and-event-binding-in-angular": [
+      "path---2018-09-13-data-and-event-binding-in-angular-e3cacb14e1c30343e00b.js",
+      "path---2018-09-13-data-and-event-binding-in-angular-e3cacb14e1c30343e00b.js.map"
+    ],
+    "path---2018-10-23-meta-tags-for-social-sharing-gatsby-blog": [
+      "path---2018-10-23-meta-tags-for-social-sharing-gatsby-blog-6833270b9b54bc545696.js",
+      "path---2018-10-23-meta-tags-for-social-sharing-gatsby-blog-6833270b9b54bc545696.js.map"
+    ],
+    "path---2018-05-26-self-teaching": [
+      "path---2018-05-26-self-teaching-d4c4f554e2bd32d98470.js",
+      "path---2018-05-26-self-teaching-d4c4f554e2bd32d98470.js.map"
+    ],
+    "component---node-modules-gatsby-plugin-offline-app-shell-js": [
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
+    ],
+    "path---2018-08-04-design-patterns-2-observer": [
+      "path---2018-08-04-design-patterns-2-observer-f49d8fd3e8161b2a8ae0.js",
+      "path---2018-08-04-design-patterns-2-observer-f49d8fd3e8161b2a8ae0.js.map"
+    ],
+    "path---2019-03-12-interview-tips-for-developers": [
+      "path---2019-03-12-interview-tips-for-developers-d233a61ef278f12a7c37.js",
+      "path---2019-03-12-interview-tips-for-developers-d233a61ef278f12a7c37.js.map"
+    ],
+    "path---2018-08-19-guaranteed-wins": [
+      "path---2018-08-19-guaranteed-wins-386ed8059aba8fe116f2.js",
+      "path---2018-08-19-guaranteed-wins-386ed8059aba8fe116f2.js.map"
+    ],
+    "component---src-templates-blog-post-js": [
+      "component---src-templates-blog-post-js-67d7505ecc557a0135ef.js",
+      "component---src-templates-blog-post-js-67d7505ecc557a0135ef.js.map"
+    ],
+    "path---2018-07-07-cron-jobs": [
+      "path---2018-07-07-cron-jobs-5e27beeb1bd2e1dc6708.js",
+      "path---2018-07-07-cron-jobs-5e27beeb1bd2e1dc6708.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-1568eae5726b31a884e0.js",
+      "component---src-layouts-index-js-1568eae5726b31a884e0.js.map"
+    ],
+    "path---2018-05-19-developer-strengths": [
+      "path---2018-05-19-developer-strengths-fee717b8dc8ae789761e.js",
+      "path---2018-05-19-developer-strengths-fee717b8dc8ae789761e.js.map"
+    ],
+    "path---2018-07-28-clean-code": [
+      "path---2018-07-28-clean-code-df1b228f4b2045b839ca.js",
+      "path---2018-07-28-clean-code-df1b228f4b2045b839ca.js.map"
+    ],
+    "path---2018-08-11-how-to-learn": [
+      "path---2018-08-11-how-to-learn-4d6de5b34b07ce3a0652.js",
+      "path---2018-08-11-how-to-learn-4d6de5b34b07ce3a0652.js.map"
+    ],
+    "path---index": [
+      "path---index-fd7ea198b752bd5e0e8d.js",
+      "path---index-fd7ea198b752bd5e0e8d.js.map"
+    ],
+    "path---2018-07-21-agile": [
+      "path---2018-07-21-agile-2f00588c734da68a0d33.js",
+      "path---2018-07-21-agile-2f00588c734da68a0d33.js.map"
+    ],
+    "path---2018-08-23-rxjs-6-changes": [
+      "path---2018-08-23-rxjs-6-changes-6d5881ccfb54b0792760.js",
+      "path---2018-08-23-rxjs-6-changes-6d5881ccfb54b0792760.js.map"
+    ],
+    "path---2018-10-01-why-you-should-practice-algorithms": [
+      "path---2018-10-01-why-you-should-practice-algorithms-45239becf5d2bc8fe3eb.js",
+      "path---2018-10-01-why-you-should-practice-algorithms-45239becf5d2bc8fe3eb.js.map"
+    ],
+    "path---2018-08-15-design-patterns-3-mvc": [
+      "path---2018-08-15-design-patterns-3-mvc-33c517648bb6ab55f2b9.js",
+      "path---2018-08-15-design-patterns-3-mvc-33c517648bb6ab55f2b9.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
+    ],
+    "path---2018-08-28-fitness": [
+      "path---2018-08-28-fitness-868dfbb7fff275770d82.js",
+      "path---2018-08-28-fitness-868dfbb7fff275770d82.js.map"
+    ],
+    "commons": [
+      "commons-7e754c863d04bcb84e3b.js",
+      "build-js-styles.css",
+      "commons-7e754c863d04bcb84e3b.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---2018-06-23-debugging-3": [
+      "path---2018-06-23-debugging-3-51a927f9c2511591ad24.js",
+      "path---2018-06-23-debugging-3-51a927f9c2511591ad24.js.map"
+    ],
+    "path---2018-09-06-great-retrospectives": [
+      "path---2018-09-06-great-retrospectives-5c26231db12630943a65.js",
+      "path---2018-09-06-great-retrospectives-5c26231db12630943a65.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---2018-06-30-debugging-4": [
+      "path---2018-06-30-debugging-4-786c4e277cce356dc253.js",
+      "path---2018-06-30-debugging-4-786c4e277cce356dc253.js.map"
+    ],
+    "path---offline-plugin-app-shell-fallback": [
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---2019-01-18-mocking-inputs-angular-unit-tests": [
+      "path---2019-01-18-mocking-inputs-angular-unit-tests-c850169d6c54b11a3fe5.js",
+      "path---2019-01-18-mocking-inputs-angular-unit-tests-c850169d6c54b11a3fe5.js.map"
+    ],
+    "path---2018-06-09-debugging-1": [
+      "path---2018-06-09-debugging-1-1b9883281b05b4f42213.js",
+      "path---2018-06-09-debugging-1-1b9883281b05b4f42213.js.map"
+    ],
+    "path---2018-12-03-sleep-vs-until-protractor": [
+      "path---2018-12-03-sleep-vs-until-protractor-5f2ebf197d57aed41941.js",
+      "path---2018-12-03-sleep-vs-until-protractor-5f2ebf197d57aed41941.js.map"
+    ],
+    "path---2019-04-28-functions-mixins-and-maps-in-scss": [
+      "path---2019-04-28-functions-mixins-and-maps-in-scss-3185d6bb69b520fe8291.js",
+      "path---2019-04-28-functions-mixins-and-maps-in-scss-3185d6bb69b520fe8291.js.map"
+    ],
+    "app": [
+      "app-ad5b9b855af91d152502.js",
+      "build-js-styles.css",
+      "app-ad5b9b855af91d152502.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---2018-08-24-automate-boring-stuff": [
+      "path---2018-08-24-automate-boring-stuff-27701280ad03ba1d57ca.js",
+      "path---2018-08-24-automate-boring-stuff-27701280ad03ba1d57ca.js.map"
+    ],
+    "path---2018-07-14-good-emails": [
+      "path---2018-07-14-good-emails-e420b793acc737535615.js",
+      "path---2018-07-14-good-emails-e420b793acc737535615.js.map"
+    ],
+    "path---2018-06-16-debugging-2": [
+      "path---2018-06-16-debugging-2-744bb455812ea2425336.js",
+      "path---2018-06-16-debugging-2-744bb455812ea2425336.js.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---2018-09-10-subjects-vs-observables-multicasting": [
+      "path---2018-09-10-subjects-vs-observables-multicasting-e0b52105007d740d3aa3.js",
+      "path---2018-09-10-subjects-vs-observables-multicasting-e0b52105007d740d3aa3.js.map"
+    ],
+    "component---src-pages-about-js": [
+      "component---src-pages-about-js-1a91191181eb8c0bb132.js",
+      "component---src-pages-about-js-1a91191181eb8c0bb132.js.map"
+    ],
+    "path---2019-04-10-passing-by-value-vs-reference": [
+      "path---2019-04-10-passing-by-value-vs-reference-dc483d705de8f74d5a9f.js",
+      "path---2019-04-10-passing-by-value-vs-reference-dc483d705de8f74d5a9f.js.map"
+    ],
+    "path---about": [
+      "path---about-ad1fcea57b60a139bc60.js",
+      "path---about-ad1fcea57b60a139bc60.js.map"
+    ]
+  }
+}
