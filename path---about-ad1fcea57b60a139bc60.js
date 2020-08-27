@@ -1,2 +1,0 @@
-webpackJsonp([0xf927f8900006],{460:function(t,e){t.exports={data:{site:{siteMetadata:{title:"John D Potts",description:"The blog and website of John Potts, a front end developer based out of Charlotte, NC"}}},pathContext:{}}}});
-//# sourceMappingURL=path---about-ad1fcea57b60a139bc60.js.map
